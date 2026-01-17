@@ -1,55 +1,79 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+.site-header {
+  position: relative;
+  background-image: url("Images/9e5faaf2-ece5-453f-85fc-e7bb4e43d3ea.JPG");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  color: white;
 }
 
-header {
-  background-color: #0077cc;
-  color: white;
-  padding: 15px;
+/* Overlay */
+.site-header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+}
+
+/* Content */
+.header-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
+.header-content h1 {
+  font-size: 3.2rem;
+  margin-bottom: 15px;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.8);
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-main {
-  padding: 20px;
-}
-
-button {
-  background-color: #ff6600;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+/* Navigation */
+.main-nav {
   margin-bottom: 20px;
 }
 
-button:hover {
+.main-nav a {
+  color: white;
+  margin: 0 14px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+.btn-primary {
+  background-color: #ff6600;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
   background-color: #e65c00;
 }
 
-.destination {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 15px 0;
-  text-align: center;
-}
+/* Responsive */
+@media (max-width: 768px) {
+  .header-content h1 {
+    font-size: 2.2rem;
+  }
 
-.destination img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  margin-bottom: 10px;
+  .main-nav a {
+    display: block;
+    margin: 8px 0;
+  }
 }
