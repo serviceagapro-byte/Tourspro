@@ -1,13 +1,15 @@
+/* Header Section */
 .site-header {
   position: relative;
-  background-image: url("Images/9e5faaf2-ece5-453f-85fc-e7bb4e43d3ea.JPG");
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/9e5faaf2-ece5-453f-85fc-e7bb4e43d3ea.JPG");
   background-size: cover;
   background-position: center;
   height: 80vh;
   color: white;
 }
 
-/* Overlay */
+/* Overlay element غير ضروري مع gradient, يمكن حذفه */
+/*
 .site-header .overlay {
   position: absolute;
   top: 0;
@@ -16,8 +18,9 @@
   height: 100%;
   background: rgba(0,0,0,0.55);
 }
+*/
 
-/* Content */
+/* Header Content */
 .header-content {
   position: relative;
   z-index: 2;
@@ -60,6 +63,7 @@
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
