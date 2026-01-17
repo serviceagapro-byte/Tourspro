@@ -1,24 +1,12 @@
 /* Header Section */
 .site-header {
   position: relative;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/9e5faaf2-ece5-453f-85fc-e7bb4e43d3ea.JPG");
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/IMG_0356.JPG");
   background-size: cover;
   background-position: center;
   height: 80vh;
   color: white;
 }
-
-/* Overlay element غير ضروري مع gradient, يمكن حذفه */
-/*
-.site-header .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.55);
-}
-*/
 
 /* Header Content */
 .header-content {
@@ -70,6 +58,24 @@
   background-color: #e65c00;
 }
 
+/* Destinations */
+.destination {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 20px auto;
+  text-align: center;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.destination img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .header-content h1 {
@@ -79,5 +85,9 @@
   .main-nav a {
     display: block;
     margin: 8px 0;
+  }
+
+  .destination {
+    max-width: 90%;
   }
 }
