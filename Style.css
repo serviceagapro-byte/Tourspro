@@ -1,24 +1,20 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  background: #f5f7fa;
-  color: #333;
 }
 
 header {
-  background: #0f4c75;
+  background-color: #0077cc;
   color: white;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
 }
 
 nav a {
   color: white;
-  text-decoration: none;
   margin: 0 10px;
-  font-weight: bold;
+  text-decoration: none;
 }
 
 nav a:hover {
@@ -26,44 +22,34 @@ nav a:hover {
 }
 
 main {
-  padding: 30px;
-  max-width: 900px;
-  margin: auto;
-  background: white;
-}
-
-h1, h2, h3 {
-  color: #0f4c75;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
+  padding: 20px;
 }
 
 button {
-  background: #1b98e0;
+  background-color: #ff6600;
   color: white;
+  padding: 10px 20px;
   border: none;
-  padding: 12px 20px;
-  font-size: 16px;
-  cursor: pointer;
   border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
 button:hover {
-  background: #147bb7;
+  background-color: #e65c00;
 }
 
-footer {
+.destination {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 15px 0;
   text-align: center;
-  padding: 15px;
-  background: #0f4c75;
-  color: white;
-  margin-top: 30px;
+}
+
+.destination img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin-bottom: 10px;
 }
