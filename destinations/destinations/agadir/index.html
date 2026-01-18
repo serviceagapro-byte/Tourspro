@@ -1,83 +1,11 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Destinations - ToursPro</title>
   <link rel="stylesheet" href="../Style.css">
-  <style>
-    /* Destinations Grid */
-    .destinations-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-    .destination-card {
-      background-color: white;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      text-align: center;
-      padding-bottom: 15px;
-      transition: transform 0.3s;
-    }
-    .destination-card:hover {
-      transform: translateY(-5px);
-    }
-    .destination-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-    .destination-card h3 {
-      margin: 10px 0 5px 0;
-    }
-    .destination-card p {
-      padding: 0 10px 10px 10px;
-      font-size: 14px;
-      color: #555;
-    }
-
-    /* أزرار داخل الكارد */
-    .btn-card {
-      display: inline-block;
-      margin: 5px 5px 0 5px;
-      padding: 8px 15px;
-      background-color: #0077cc;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 14px;
-      transition: 0.3s;
-    }
-    .btn-card:hover {
-      background-color: #005fa3;
-      transform: scale(1.05);
-    }
-
-    /* زر WhatsApp خاص بالكارد */
-    .whatsapp-btn {
-      background-color: #25D366; /* أخضر واتساب */
-      color: white;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      text-decoration: none;
-      padding: 10px 15px;
-      border-radius: 8px;
-      transition: 0.3s;
-      font-weight: bold;
-    }
-    .whatsapp-btn:hover {
-      background-color: #1ebe5d;
-      transform: scale(1.05);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-  </style>
 </head>
 <body>
-
 <header class="site-header">
   <div class="header-content">
     <h1>Top Destinations</h1>
@@ -94,45 +22,18 @@
 <main>
   <section class="destinations-section">
     <div class="destinations-grid">
-
-      <!-- Paradise Valley -->
       <div class="destination-card">
         <img src="../صور/IMG_0319.JPG" alt="Paradise Valley">
         <h3>Paradise Valley</h3>
         <p>Nature & swimming spots with beautiful scenery.</p>
         <a href="https://www.google.com/maps?q=Paradise+Valley+Agadir" target="_blank" class="btn-card">View on Map</a>
-        <a href="https://wa.me/212638215059?text=مرحبا، أريد حجز Paradise Valley" 
-           target="_blank" class="btn-card whatsapp-btn">📲 احجز الآن</a>
+        <a href="#" class="btn-card">Book Now</a>
       </div>
 
-      <!-- Temragt -->
       <div class="destination-card">
         <img src="../صور/IMG_0355.JPG" alt="Temragt">
         <h3>Temragt</h3>
         <p>Calm village & local life experience.</p>
         <a href="https://www.google.com/maps?q=Temragt+Agadir" target="_blank" class="btn-card">View on Map</a>
-        <a href="https://wa.me/212638215059?text=مرحبا، أريد حجز Temragt" 
-           target="_blank" class="btn-card whatsapp-btn">📲 احجز الآن</a>
+        <a href="#" class="btn-card">Book Now</a>
       </div>
-
-      <!-- إضافة وجهة جديدة بنفس الطريقة -->
-      <!--
-      <div class="destination-card">
-        <img src="../صور/اسم_الصورة.jpg" alt="اسم الوجهة">
-        <h3>اسم الوجهة</h3>
-        <p>وصف مختصر للوجهة.</p>
-        <a href="رابط Google Maps" target="_blank" class="btn-card">View on Map</a>
-        <a href="https://wa.me/212638215059?text=مرحبا، أريد حجز اسم الوجهة" target="_blank" class="btn-card whatsapp-btn">📲 احجز الآن</a>
-      </div>
-      -->
-
-    </div>
-  </section>
-</main>
-
-<footer>
-  <p>© 2026 ToursPro</p>
-</footer>
-
-</body>
-</html>
