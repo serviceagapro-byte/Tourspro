@@ -1,93 +1,52 @@
-/* Header Section */
-.site-header {
-  position: relative;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("IMG_0319.JPG");
-  background-size: cover;
-  background-position: center;
-  height: 80vh;
-  color: white;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - ToursPro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* Header Content */
-.header-content {
-  position: relative;
-  z-index: 2;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+  <!-- Header Section -->
+  <header class="site-header">
+    <div class="header-content">
+      <h1>Welcome to ToursPro</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Us</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="#destinations">Destinations</a>
+      </nav>
+      <a href="#" class="btn-primary">Book Now</a>
+    </div>
+  </header> 
 
-.header-content h1 {
-  font-size: 3.2rem;
-  margin-bottom: 15px;
-  text-shadow: 0 4px 12px rgba(0,0,0,0.8);
-}
+  <main>
+    <section id="destinations">
+      <h2>Top Destinations in Agadir</h2>
+      
+      <div class="destinations-grid">
+        <div class="destination-card">
+          <img src="Images/IMG_0319.JPG" alt="Paradise Valley">
+          <h3>Paradise Valley</h3>
+          <p>Nature & swimming spots with beautiful scenery.</p>
+        </div>
 
-/* Navigation */
-.main-nav {
-  margin-bottom: 20px;
-}
+        <div class="destination-card">
+          <img src="Images/IMG_0355.JPG" alt="Temragt">
+          <h3>Temragt</h3>
+          <p>Calm village & local life experience.</p>
+        </div>
 
-.main-nav a {
-  color: white;
-  margin: 0 14px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.05rem;
-}
+        <!-- يمكن تزيد صور أخرى بنفس الطريقة -->
+      </div>
 
-.main-nav a:hover {
-  text-decoration: underline;
-}
+    </section>
+  </main>
 
-/* Button */
-.btn-primary {
-  background-color: #ff6600;
-  color: white;
-  padding: 12px 28px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
+  <footer>
+    <p>© 2026 ToursPro</p>
+  </footer>
 
-.btn-primary:hover {
-  background-color: #e65c00;
-}
-
-/* Destinations */
-.destination {
-  border: 1px solid #ccc;
-  padding: 15px;
-  margin: 20px auto;
-  text-align: center;
-  max-width: 400px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.destination img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  margin-bottom: 10px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .header-content h1 {
-    font-size: 2.2rem;
-  }
-
-  .main-nav a {
-    display: block;
-    margin: 8px 0;
-  }
-
-  .destination {
-    max-width: 90%;
-  }
-}
+</body>
+</html>
