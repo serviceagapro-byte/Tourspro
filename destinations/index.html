@@ -1,12 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - ToursPro</title>
   <link rel="stylesheet" href="Style.css">
+  <style>
+    /* ----- Styles for GetYourGuide-like section ----- */
+    .activities-section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .activities-section h2 {
+      text-align: center;
+      color: #0077cc;
+      margin-bottom: 30px;
+    }
+
+    /* Grid container */
+    .activities-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 cards per row on desktop */
+      gap: 20px;
+    }
+
+    /* Activity card */
+    .activity-card {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+    }
+    .activity-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .activity-info {
+      padding: 15px 20px;
+    }
+    .activity-info h3 {
+      margin-top: 0;
+      color: #0077cc;
+      font-size: 18px;
+    }
+    .details {
+      margin: 10px 0;
+      font-size: 14px;
+      color: #555;
+    }
+    .price {
+      font-size: 16px;
+      font-weight: bold;
+      color: #e74c3c;
+    }
+    .btn-book {
+      display: inline-block;
+      padding: 8px 15px;
+      margin-top: 10px;
+      background-color: #0077cc;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .btn-book:hover {
+      background-color: #005fa3;
+    }
+    .rating {
+      color: #f1c40f;
+    }
+
+    /* ----- Responsive ----- */
+    @media (max-width: 1024px) {
+      .activities-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablet */
+      }
+    }
+    @media (max-width: 768px) {
+      .activities-grid {
+        grid-template-columns: 1fr; /* 1 card per row on mobile */
+      }
+    }
+  </style>
 </head>
 <body>
-  <!-- Header with background image -->
+  <!-- Header -->
   <header class="site-header">
     <div class="header-content">
       <h1>Welcome to ToursPro</h1>
@@ -40,8 +122,41 @@
         </div>
       </div>
     </section>
+
+    <!-- Activities Section (GetYourGuide style) -->
+    <section class="activities-section">
+      <h2>أنشطتنا السياحية في أكادير</h2>
+      <div class="activities-grid">
+
+        <div class="activity-card">
+          <img src="Images/camel-ride.jpg" alt="جولة على الجمال">
+          <div class="activity-info">
+            <h3>جولة على الجمال + رباعيات في صحراء أغافاي</h3>
+            <div class="details">المدة: 7 ساعات | التوصيل متاح | دليل صوتي اختياري</div>
+            <div class="rating">⭐ 4.9 (23420 مراجعة)</div>
+            <div class="price">520 درهم</div>
+            <a href="https://www.getyourguide.com/your-affiliate-link" target="_blank" class="btn-book">احجز الآن</a>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <img src="Images/ourika.jpg" alt="شلالات وريكة">
+          <div class="activity-info">
+            <h3>شلالات وريكة وجبال الأطلس + الغداء</h3>
+            <div class="details">المدة: 7 ساعات | التوصيل متاح</div>
+            <div class="rating">⭐ 4.9 (7311 مراجعة)</div>
+            <div class="price">192 درهم</div>
+            <a href="https://www.getyourguide.com/your-affiliate-link" target="_blank" class="btn-book">احجز الآن</a>
+          </div>
+        </div>
+
+        <!-- يمكنك إضافة نشاطات أكثر بنفس الطريقة -->
+        
+      </div>
+    </section>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>© 2026 ToursPro</p>
   </footer>
