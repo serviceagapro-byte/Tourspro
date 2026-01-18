@@ -1,52 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Home - ToursPro</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  <!-- Header Section -->
-  <header class="site-header">
-    <div class="header-content">
-      <h1>Welcome to ToursPro</h1>
-      <nav class="main-nav">
-        <a href="index.html">Home</a> |
-        <a href="about.html">About Us</a> |
-        <a href="contact.html">Contact</a> |
-        <a href="#destinations">Destinations</a>
-      </nav>
-      <a href="#" class="btn-primary">Book Now</a>
-    </div>
-  </header> 
+.site-header {
+  background-color: #0077cc;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
 
-  <main>
-    <section id="destinations">
-      <h2>Top Destinations in Agadir</h2>
-      
-      <div class="destinations-grid">
-        <div class="destination-card">
-          <img src="Images/IMG_0319.JPG" alt="Paradise Valley">
-          <h3>Paradise Valley</h3>
-          <p>Nature & swimming spots with beautiful scenery.</p>
-        </div>
+.main-nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
 
-        <div class="destination-card">
-          <img src="Images/IMG_0355.JPG" alt="Temragt">
-          <h3>Temragt</h3>
-          <p>Calm village & local life experience.</p>
-        </div>
+.main-nav a:hover {
+  text-decoration: underline;
+}
 
-        <!-- يمكن تزيد صور أخرى بنفس الطريقة -->
-      </div>
+.btn-primary {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ff9900;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
 
-    </section>
-  </main>
+/* Destinations Grid */
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
 
-  <footer>
-    <p>© 2026 ToursPro</p>
-  </footer>
+.destination-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  text-align: center;
+}
 
-</body>
-</html>
+.destination-card:hover {
+  transform: translateY(-5px);
+}
+
+.destination-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.destination-card:hover img {
+  transform: scale(1.05);
+}
+
+.destination-card h3 {
+  margin: 10px 0 5px 0;
+}
+
+.destination-card p {
+  padding: 0 10px 10px 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.btn-card {
+  display: inline-block;
+  margin: 10px 0 15px 0;
+  padding: 8px 15px;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-card:hover {
+  background-color: #005fa3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #0077cc;
+  color: white;
+}
+
+/* About & Contact sections */
+.about-section, .contact-section {
+  padding: 50px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
