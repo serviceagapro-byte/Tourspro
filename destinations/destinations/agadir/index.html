@@ -3,34 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <title>About Us - ToursPro</title>
-  <link rel="stylesheet" href="Style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="header-content">
-      <h1>About ToursPro</h1>
-      <nav class="main-nav">
-        <a href="index.html">Home</a> |
-        <a href="about.html">About Us</a> |
-        <a href="contact.html">Contact</a> |
-        <a href="الوجهات/index.html">Destinations</a> |
-        <a href="جولات سياحية/index.html">Tours</a>
-      </nav>
-    </div>
-  </header>
+  <style>
+    /* ===== Base ===== */
+    * { margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif; }
+    body { background:#f8f9fa; color:#333; line-height:1.6; }
 
-  <main>
-    <section class="about-section">
-      <h2>Our Mission</h2>
-      <p>ToursPro provides professional tourist services in Agadir and nearby areas. Our goal is to make your trip unforgettable with local guides, comfortable transport, and customized tours.</p>
+    /* ===== Header ===== */
+    .site-header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                  url('Images/IMG_0319.JPG') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px 60px 20px;
+      text-align: center;
+      position: relative;
+    }
+    .header-content { position:relative; z-index:1; }
+    .main-nav a { color:white; margin:0 10px; text-decoration:none; font-weight:bold; }
+    .main-nav a:hover { text-decoration:underline; }
 
-      <h2>Our Team</h2>
-      <p>We are a group of experienced local guides and drivers committed to offering high-quality tourist experiences.</p>
-    </section>
-  </main>
+    /* ===== Circular Logo (Dora) ===== */
+    .header-circle {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
 
-  <footer>
-    <p>© 2026 ToursPro</p>
-  </footer>
-</body>
-</html>
+    /* ===== Images under header ===== */
+    .header-images { max-width:1200px; margin:20px auto; padding:0 20px; }
+    .image-container { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+    .image-container img { width:100%; max-width:350px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.2); }
+
+    /* ===== Main Section ===== */
+    main { max-width:900px; margin:40px auto
