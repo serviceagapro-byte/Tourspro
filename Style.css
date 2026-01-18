@@ -38,18 +38,48 @@ body {
   text-decoration: underline;
 }
 
-.btn-primary {
+/* تصميم موحد لكل الأزرار مع تكبير وحركة وظل */
+button, .btn-primary, .btn-card, a.btn {
   display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #ff9900;
+  padding: 15px 30px;           /* مساحة داخل الزر أكبر */
+  font-size: 18px;              /* حجم النص أكبر */
+  background-color: #0077cc;    /* اللون الأساسي */
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 8px;           /* الزوايا مستديرة */
+  margin: 10px 0;               /* مسافة حول الزر */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* ظل خفيف */
+}
+
+/* زر رئيسي مختلف اللون */
+.btn-primary {
+  background-color: #ff9900;
 }
 
 .btn-primary:hover {
   background-color: #e68a00;
+  transform: scale(1.05);   
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* الظل عند hover أكبر */
+}
+
+/* زر ثانوي أو بطاقات */
+.btn-card {
+  background-color: #0077cc;
+}
+
+.btn-card:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* أزرار عادية من HTML <button> أو <a> */
+button:hover, a.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
 /* Destinations Grid */
@@ -92,21 +122,6 @@ body {
   padding: 0 10px 10px 10px;
   font-size: 14px;
   color: #555;
-}
-
-.btn-card {
-  display: inline-block;
-  margin: 10px 0 15px 0;
-  padding: 8px 15px;
-  background-color: #0077cc;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.btn-card:hover {
-  background-color: #005fa3;
 }
 
 /* Footer */
