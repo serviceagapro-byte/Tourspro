@@ -6,7 +6,7 @@ body {
 
 /* Header with background image */
 .site-header {
-  background-image: url('Images/IMG_0319.JPG');
+  background-image: url('../images/img_0319.jpg'); /* مسار صحيح */
   background-size: cover;
   background-position: center;
   color: white;
@@ -41,17 +41,17 @@ body {
 /* تصميم موحد لكل الأزرار مع تكبير وحركة وظل */
 button, .btn-primary, .btn-card, a.btn {
   display: inline-block;
-  padding: 15px 30px;           /* مساحة داخل الزر أكبر */
-  font-size: 18px;              /* حجم النص أكبر */
-  background-color: #0077cc;    /* اللون الأساسي */
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #0077cc;
   color: white;
   text-decoration: none;
-  border-radius: 8px;           /* الزوايا مستديرة */
-  margin: 10px 0;               /* مسافة حول الزر */
+  border-radius: 8px;
+  margin: 10px 0;
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
   text-align: center;
   cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* ظل خفيف */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
 /* زر رئيسي مختلف اللون */
@@ -61,8 +61,8 @@ button, .btn-primary, .btn-card, a.btn {
 
 .btn-primary:hover {
   background-color: #e68a00;
-  transform: scale(1.05);   
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* الظل عند hover أكبر */
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
 /* زر ثانوي أو بطاقات */
@@ -133,11 +133,12 @@ footer {
 }
 
 /* About & Contact sections */
-.about-section, .contact-section {
+.about-section, .contact-section, .page-content {
   padding: 50px 20px;
   background-color: #f5f5f5;
   text-align: center;
 }
+
 /* Activities Section */
 .activities-section {
   max-width: 1200px;
