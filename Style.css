@@ -15,71 +15,46 @@ body {
   position: relative;
 }
 
+.site-header {
+  background-image: url('../images/img_0319.jpg'); /* مسار الصورة */
+  background-size: cover;       /* الصورة تغطي كامل الهيدر */
+  background-position: center;  /* توضع في الوسط */
+  height: 400px;                /* ارتفاع الهيدر */
+  color: white;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;          /* يجعل المحتوى عموديًا في الوسط */
+  justify-content: center;      /* يجعل المحتوى أفقيًا في الوسط */
+}
+
 .site-header::before {
   content: "";
   position: absolute;
-  top:0; left:0; right:0; bottom:0;
-  background-color: rgba(0,0,0,0.4);
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.4); /* طبقة مظللة */
   z-index: 0;
 }
 
 .header-content {
   position: relative;
-  z-index: 1;
+  z-index: 1;  /* يظهر فوق الصورة */
+}
+
+.header-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
 }
 
 .main-nav a {
   color: white;
   margin: 0 10px;
   text-decoration: none;
+  font-size: 18px;
 }
 
 .main-nav a:hover {
   text-decoration: underline;
-}
-
-/* تصميم موحد لكل الأزرار مع تكبير وحركة وظل */
-button, .btn-primary, .btn-card, a.btn {
-  display: inline-block;
-  padding: 15px 30px;
-  font-size: 18px;
-  background-color: #0077cc;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  margin: 10px 0;
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-  text-align: center;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-
-/* زر رئيسي مختلف اللون */
-.btn-primary {
-  background-color: #ff9900;
-}
-
-.btn-primary:hover {
-  background-color: #e68a00;
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
-
-/* زر ثانوي أو بطاقات */
-.btn-card {
-  background-color: #0077cc;
-}
-
-.btn-card:hover {
-  background-color: #005fa3;
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
-
-/* أزرار عادية من HTML <button> أو <a> */
-button:hover, a.btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
 /* Destinations Grid */
